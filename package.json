@@ -13,7 +13,8 @@
     "bulma-toast": "^2.4.2",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -26,5 +27,11 @@
     "eslint-plugin-vue": "^8.0.3",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0"
+  },
+  "eslintConfig": {
+    "rules": {
+      "no-console": "off",
+      "no-unused-vars": "off"
+    }
   }
 }
