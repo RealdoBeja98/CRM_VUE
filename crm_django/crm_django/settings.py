@@ -31,6 +31,16 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:8080',
     
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES':(
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+    'DEFAUL_PERMISSION_CLASSES':(
+        'rest_framework.permissions.IsAuthenticated',
+    )
+}
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,6 +55,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'rest_framework.authtoken',
+    'lead.apps.LeadConfig'
     
     
 ]
