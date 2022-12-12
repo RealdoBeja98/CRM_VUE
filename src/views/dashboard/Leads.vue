@@ -21,6 +21,7 @@
                             <th>
                                 Status
                             </th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -35,6 +36,11 @@
                                 </td>
                                 <td>
                                     {{lead.status}}
+                                </td>
+                                <td>
+                                    <router-link :to="{ name: 'MyLead', params: { id: lead.id }}">
+                                        Details 
+                                     </router-link>
                                 </td>
                         </tr>
                     </tbody>
